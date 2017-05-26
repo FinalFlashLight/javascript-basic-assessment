@@ -104,17 +104,13 @@ function removeItem(arr, str){
 // #11 Write a function  called doubleTheFun that takes 1 parameter. It should double numbers, and
 // repeats strings. example 4->8, 2.5->5, 'Awesome'->'AwesomeAwesome'
 function doubleTheFun(param){
-	console.log(param + ' before');
 	var num = Number.parseInt(param);
-	console.log(num + ' num')
-	if(num === NaN){
+	if(Number.isNaN(num)){
 		param = param + param;
-		console.log('nan ' + param);
 		return param;
 	}
 	else{
-		param = param * param;
-		console.log('is a num ' + param);
+		param = param * 2;
 		return param;
 	}
 
